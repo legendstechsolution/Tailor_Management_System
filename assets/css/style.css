@@ -1,0 +1,58 @@
+.bgcolor
+{
+    background-color: lightgreen;
+}
+.app
+{
+    background-color: yellow;
+}
+.fun
+{
+    color: #90EE90;
+}
+.blue
+{
+    background-color: blue;
+}
+.alpha
+{
+    background-color:rebeccapurple;
+}
+.van
+{
+    background-color: #0A58CA;
+    color: white;
+}
+.car
+{
+    background-color: #3D8BFD;
+    color: white;
+}
+.swift
+{
+    background-color: #FFC107;
+    color: white;
+}
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1366px) {}
+
+@media only screen and (min-width : 1440px) {}
+
+@media only screen and (min-width : 1600px) {}
+
+@media only screen and (min-width : 1920px) {}
