@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailoring Management System</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title>
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tailoring Management System</title>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         $(function() {
-            $("#includeHtml").load("Header.html");
+         $("#includeHtml").load("Header.html");
         }); 
-        $(function() {
-            $("#sidebar").load("Sidebar.html");
+         $(function() {
+         $("#sidebar").load("Sidebar.html");
         });
-    </script>
+     </script>
 </head>
 <body>
-    <div id="includeHtml"></div>
-        <div class="row">
-            <div class="col-md-3">
-                <div id="sidebar"></div>
-            </div>
-            <div class=" container-fluid card set mt-3 ms-4">
+    <div  id="includeHtml">
+
+    </div>
+    <div class="row">
+        <div class="col-md-3 " >
+            <div  id="sidebar"></div>
+        </div>
+        <div class="col-md-9 card ms-4  mt-3 mb-3" style="height: auto;" >
+            <div class="  ">
                 <div class="row">
                     <div class="col-md-7 mt-2 ms-2">
-                        <p class="mt-1">Manage Order</p>
+                        <P class="mt-1">Tailor Production Report</P>
                     </div>
                     <div class="col-md-1 print">
-                        <div class="btn btn-warning mt-2">Print</div>
+                        <div class="btn btn-warning mt-2" >Print</div>
                     </div>
-                    <div class="col-md-4 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="row">
                             <div class="col-md-7 mt-2">
-                                <p class="float-end ms-1">Rows per page</p>
+                                <p class="float-end " style="margin-right: -20px;">Rows per page</p>
                             </div>
-                            <div class="col-md-5 mt-2">
+                            <div class="col-md-2 mt-2 ">
                                 <div class="dropdown">
                                     <select id="dropdownlist">
                                         <option>1</option>
@@ -47,29 +49,66 @@
                                         <option>7</option>
                                         <option>8</option>
                                         <option>9</option>
-                                        <option>10</option>                                    
-                                      </select>
+                                        <option>10</option>
+                                    </select>
                                 </div>
+                            </div>
+                            <div class="col-md-2 ">
+                              <ul class="pagination">
+                                <li class="page-item"><a class="page-link ms-5" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              </ul>                    
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="line m-3" style="border: 1px solid black;"></div>
+                    
+                </div> 
+                <hr class="line" style="border: 1px solid black;"> 
                 <div class="row mb-3">
-                    <div class="col-md-6 ms-3">
-                        <input type="text" placeholder="Search" class="w-100">
+                    <div class="col-md-2 ms-3 ">
+                        <input type="text" placeholder="Search"  class="search"/>
                     </div>
-                    <button class="col-md-4 ms-3 order">
-                        <b>SHOW PENDING ORDER</b>
-                    </button>
-                    <button class="col-md-2 add ms-1">
-                        <b>ADD</b>
-                    </button>
+                    <div class="col-md-1 ">
+                        <div class="dropdown " >
+                            <select id="dropdownlist" class="p-1">
+                                <option>Select All</option>
+                                <option>Type 1</option>
+                                <option>Type 2</option>
+                                <option>Type 3</option>
+                                <option>Type 4</option>
+                                <option>Type 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-7 ms-1">
+                                <p class="float-end pt-1">From date :</p>
+                            </div>
+                            <div class="col-md-1">
+                                <input type="date" class="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p class="float-end pt-1">To date :</p>
+                            </div>
+                            <div class="col-md-1">
+                                <input type="date"  class="date"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 ms-4">
+                        <div class="btn btn-success "><B>SUBMIT</B></div>
+                    </div>
+                    <div class="col-md-1 ms-3">
+                        <div class="btn btn-warning">CLEAR</div>
+                    </div>
                 </div>
-                <div class="overflow-scroll">
-                  <div class="overflow-scroll">
-                    <div class="table-responsive">
-                      <table class="table table-bordered text-center ms-3  ">
+                <div class="overflow-scroll adjust ">
+                    <table class="table table-bordered ms-3  ">
                         <thead>
                           <tr>
                             <th scope="col">SI.NO</th>
@@ -94,7 +133,7 @@
                             <td><i class="fa fa-edit" class="ms-2"></i></td>
                             <td><i class="fa fa-trash-o"></i></td>
                             <td><i class="fa fa-user-plus"></i></td>
-                            <td><button class="pending bg-danger text-white">Pending</button></td>
+                            <td><button class="pending bg-danger">Pending</button></td>
                             <td>12/12/2022</td>
                             <td>3</td>
                             <td>1223</td>
@@ -110,7 +149,7 @@
                             <td><i class="fa fa-edit" class="ms-2"></i></td>
                             <td><i class="fa fa-trash-o"></i></td>
                             <td><i class="fa fa-user-plus"></i></td>
-                            <td><button class="pending bg-success text-white">Completed</button></td>
+                            <td><button class="pending bg-success">Completed</button></td>
                             <td>21/11/2023</td>
                             <td>2</td>
                             <td>1223</td>
@@ -126,7 +165,7 @@
                             <td><i class="fa fa-edit" class="ms-2"></i></td>
                             <td><i class="fa fa-trash-o"></i></td>
                             <td><i class="fa fa-user-plus"></i></td>
-                            <td><button class="pending bg-danger text-white">Pending</button></td>
+                            <td><button class="pending bg-danger">Pending</button></td>
                             <td>12/12/2022</td>
                             <td>6</td>
                             <td>1223</td>
@@ -142,7 +181,7 @@
                             <td><i class="fa fa-edit" class="ms-2"></i></td>
                             <td><i class="fa fa-trash-o"></i></td>
                             <td><i class="fa fa-user-plus"></i></td>
-                            <td><button class="pending bg-success text-white">Completed</button></td>
+                            <td><button class="pending bg-success">Completed</button></td>
                             <td>12/07/2023</td>
                             <td>3</td>
                             <td>1223</td>
@@ -158,7 +197,7 @@
                             <td><i class="fa fa-edit" class="ms-2"></i></td>
                             <td><i class="fa fa-trash-o"></i></td>
                             <td><i class="fa fa-user-plus"></i></td>
-                            <td><button class="pending bg-danger text-white">Pending</button></td>
+                            <td><button class="pending bg-danger">Pending</button></td>
                             <td>12/08/2023</td>
                             <td>3</td>
                             <td>1223</td>
@@ -174,7 +213,7 @@
                               <td><i class="fa fa-edit" class="ms-2"></i></td>
                               <td><i class="fa fa-trash-o"></i></td>
                               <td><i class="fa fa-user-plus"></i></td>
-                              <td><button class="pending bg-danger text-white">Pending</button></td>
+                              <td><button class="pending bg-danger">Pending</button></td>
                               <td>12/12/2022</td>
                               <td>3</td>
                               <td>1223</td>
@@ -190,7 +229,7 @@
                               <td><i class="fa fa-edit" class="ms-2"></i></td>
                               <td><i class="fa fa-trash-o"></i></td>
                               <td><i class="fa fa-user-plus"></i></td>
-                              <td><button class="pending bg-success text-white">Completed</button></td>
+                              <td><button class="pending bg-success">Completed</button></td>
                               <td>21/11/2023</td>
                               <td>2</td>
                               <td>1223</td>
@@ -206,7 +245,7 @@
                               <td><i class="fa fa-edit" class="ms-2"></i></td>
                               <td><i class="fa fa-trash-o"></i></td>
                               <td><i class="fa fa-user-plus"></i></td>
-                              <td><button class="pending bg-danger text-white">Pending</button></td>
+                              <td><button class="pending bg-danger">Pending</button></td>
                               <td>12/12/2022</td>
                               <td>6</td>
                               <td>1223</td>
@@ -222,7 +261,7 @@
                               <td><i class="fa fa-edit" class="ms-2"></i></td>
                               <td><i class="fa fa-trash-o"></i></td>
                               <td><i class="fa fa-user-plus"></i></td>
-                              <td><button class="pending bg-success text-white">Completed</button></td>
+                              <td><button class="pending bg-success">Completed</button></td>
                               <td>12/07/2023</td>
                               <td>3</td>
                               <td>1223</td>
@@ -238,7 +277,7 @@
                               <td><i class="fa fa-edit" class="ms-2"></i></td>
                               <td><i class="fa fa-trash-o"></i></td>
                               <td><i class="fa fa-user-plus"></i></td>
-                              <td><button class="pending bg-danger text-white">Pending</button></td>
+                              <td><button class="pending bg-danger">Pending</button></td>
                               <td>12/08/2023</td>
                               <td>3</td>
                               <td>1223</td>
@@ -251,11 +290,24 @@
                             </tr>
                           </tbody>  
                       </table>
-                    </div>
-                  </div>
-                </div>                
+           
+                </div>
+                <div class="border ms-3 me-3 bg-primary d-flex justify-content-center">
+                    <p><b>TOTAL EARNED:</b>802837</p>
+                </div>
+                <div class="border ms-3 me-3 bg-danger mt-1 d-flex justify-content-center">
+                    <p><b>LESS ADVANCE PAID (-):</b>837</p>
+                </div>
+                <div class="border ms-3 me-3 bg-warning mt-1 d-flex justify-content-center">
+                    <p><b>BALANCE TO PAY:</b>880837</p>
+                </div>
+                <div class="border ms-3 me-3 bg-info mt-1 d-flex justify-content-center">
+                    <p><b>TOTAL QTY STRECHED:</b>220837</p>
+                </div>
             </div>
         </div>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+   
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>    
 </body>
 </html>

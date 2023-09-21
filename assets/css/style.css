@@ -1,51 +1,264 @@
-.bgcolor
-{
-    background-color: lightgreen;
+/* Connect All start */
+
+p,div,h1,h2,h3,h4,h5,h6,body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: sans-serif;
 }
-.app
+
+.width
 {
-    background-color: yellow;
+    width: 70%;
 }
-.fun
+.widthsmall
 {
-    color: #90EE90;
+    width: 25%;
 }
-.blue
+
+.row{
+    margin-right: 0px;
+}
+
+/* Connect All end */
+
+
+/* Header start */
+
+.clear
 {
-    background-color: blue;
+    margin-left: -12px;
 }
+
+/* Header end */
+
+/* Sidebar start */
+
+.sidebar{
+    background-color: rgb(76, 100, 124);
+    color: white;
+    height: autopx;
+}
+
+/* Sidebar end */
+
+/* add_staff start */
+
 .alpha
 {
     background-color:rebeccapurple;
 }
+
+/* add_staff end */
+
+/* create_order start */
+
+.height
+{
+    height: 1500px;
+    background-color: rgb(76, 100, 124);
+    margin-left: -12px;
+    padding-left: 24px;
+}
+
+.app
+{
+    background-color: yellow;
+    font-size: 14px;
+}
+
+.bgcolor
+{
+    background-color: lightgreen;
+    font-size: 14px;
+
+}
+
+.fun
+{
+    color: #90EE90;
+}
+
+.blue
+{
+    background-color: blue;
+    font-size: 14px;
+}
+
+.margin
+{
+    margin-left: -28px;
+    width: 180px;
+}
+
+
+
+/* create_order end */
+
+/* dashboard start */
+
 .van
 {
     background-color: #0A58CA;
     color: white;
+    
 }
+
 .car
 {
     background-color: #3D8BFD;
     color: white;
 }
+
 .swift
 {
     background-color: #FFC107;
     color: white;
 }
-@media only screen and (max-width: 600px) {}
+
+/* dashboard end */
+
+/* Manage order start */
+
+.setwidth
+{
+    width: 75%;
+}
+.w-75
+{
+    width: -25px;
+}
+.card.set
+{
+    height: 580px;
+    margin-right: -20px;
+}
+.order
+{
+    font-size: 15px;
+    background:purple;
+    border: 1px solid purple ;
+}
+
+.add
+{
+    font-size: 15px;
+    background:purple;
+    border-radius: 10px;
+    border: 1px solid purple ;
+
+}
+
+.overflow-scroll
+{
+    width: 100%;
+    height: 440px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+thead
+{
+    font-size: 13px;
+}
+
+.pending
+{
+    border-radius: 10px;
+}
+
+.line
+{
+    margin-top: -10px;
+}
+
+/* Manage order end */
+
+/*  Tailor Production Report Start */
+
+.date
+{
+    margin-left: -20px;
+}
+
+.search
+{
+    width: 100%;
+}
+
+.overflow-scroll.adjust
+{
+    height: 300px;
+}
+
+/*  Tailor Production Report end */
+
+/* Manage Tailor Start */
+
+.card.tailor
+{
+    height: 400px;
+}
+
+
+/* My profile start */
+
+.rounded
+{
+    padding-left: 40px;
+}
+
+.jones
+{
+    text-align: center;
+}
+
+.jones.name
+{
+    color: grey;
+}
+
+.card
+{
+    width: 70%;
+}
+
+.text
+{
+    background-color:rebeccapurple;
+    font-size: 13px;
+    width: 70%;
+}
+
+.jone
+{
+    height: 400px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
 
 @media only screen and (max-width: 425px) {}
 
 @media only screen and (max-width: 375px) {}
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (min-width: 400px) {
+   
+}
+@media (max-width: 767px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 300px) {}
 
-@media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 715px) {}
+
+@media (min-width: 300px) and (max-width: 997px) {}
 
 @media only screen and (min-width : 1200px) {}
 
@@ -55,4 +268,6 @@
 
 @media only screen and (min-width : 1600px) {}
 
-@media only screen and (min-width : 1920px) {}
+@media only screen and (max-width : 1920px) { 
+  
+}

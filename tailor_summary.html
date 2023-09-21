@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title>
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tailoring Management System</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+         $("#includeHtml").load("Header.html");
+        }); 
+         $(function() {
+         $("#sidebar").load("Sidebar.html");
+        });
+     </script>
+</head>
+<body>
+    <div  id="includeHtml">
+
+    </div>
+    <div class="row">
+        <div class="col-md-4 w-25 " >
+            <div  id="sidebar"></div>
+        </div> 
+        <div class="col-md-8 card  mt-3 ms-4 h-75">
+            <div class=" mt-3">
+                <P class="mt-3 ms-3">Tailor Summaary</P>
+                <hr style="border: 1px solid black;"> 
+                <div class="row mb-3">
+                    <div class="col-md-2 ms-3 ">
+                        <input type="text" placeholder="Search"  class="search"/>
+                    </div>
+                    <div class="col-md-1 ">
+                        <div class="dropdown " >
+                            <select id="dropdownlist" class="p-1">
+                                <option>Select All</option>
+                                <option>Type 1</option>
+                                <option>Type 2</option>
+                                <option>Type 3</option>
+                                <option>Type 4</option>
+                                <option>Type 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-7 ms-1">
+                                <p class="float-end pt-1">From date :</p>
+                            </div>
+                            <div class="col-md-1">
+                                <input type="date" class="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p class="float-end pt-1">To date :</p>
+                            </div>
+                            <div class="col-md-1">
+                                <input type="date"  class="date"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 ms-4">
+                        <div class="btn btn-success "><B>SUBMIT</B></div>
+                    </div>
+                    <div class="col-md-1 ms-3">
+                        <div class="btn btn-warning">CLEAR</div>
+                    </div>
+                </div>
+                  <div class="ms-3 me-3">
+                    <table class="table tailor ">
+                      <thead class="table-secondary">
+                        <tr>
+                          <th scope="col">SI.NO</th>
+                          <th scope="col">ASSIGNED</th>
+                          <th scope="col">EMAIL</th>
+                          <th scope="col">PHONE NO</th>
+                          <th scope="col">ADDRESS</th>
+                          <th scope="col">EDIT</th>
+                          <th scope="col">DELETE</th>
+                        </tr>
+                      </thead>
+                      <tbody  >
+                        <tr >
+                          <th scope="row ">1</th>
+                          <td>Janu</td>
+                          <td>jaanujaanu@gmail.com</td>
+                          <td>883883773</td>
+                          <td>10,pullaiyar kovil</td>
+                          <td><i class="fa fa-edit" class="ms-2"></i></td>
+                          <td><i class="fa fa-trash-o"></i></td>
+                        </tr>
+                        <tr >
+                          <th scope="row ">2</th>
+                          <td>David</td>
+                          <td>david009@gmail.com</td>
+                          <td>299384747</td>
+                          <td>10,pullaiyar kovil</td>
+                          <td><i class="fa fa-edit" class="ms-2"></i></td>
+                          <td><i class="fa fa-trash-o"></i></td>
+                        </tr>
+                        <tr >
+                          <th scope="row ">3</th>
+                          <td>Kanni</td>
+                          <td>kanni420@gmail.com</td>
+                          <td>8798987878</td>
+                          <td>10,pullaiyar kovil</td>
+                          <td><i class="fa fa-edit" class="ms-2"></i></td>
+                          <td><i class="fa fa-trash-o"></i></td>
+                        </tr>
+                        <tr >
+                          <th scope="row ">4</th>
+                          <td>Mega</td>
+                          <td>megahha@gmail.com</td>
+                          <td>09876543</td>
+                          <td>10,pullaiyar kovil</td>
+                          <td><i class="fa fa-edit" class="ms-2"></i></td>
+                          <td><i class="fa fa-trash-o"></i></td>
+                        </tr>
+                        <tr >
+                          <th scope="row ">5</th>
+                          <td>Boologam</td>
+                          <td>Boologam123@gmail.com</td>
+                          <td>883878383</td>
+                          <td>10,pullaiyar kovil</td>
+                          <td><i class="fa fa-edit" class="ms-2"></i></td>
+                          <td><i class="fa fa-trash-o"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>    
+</body>
+</html>
