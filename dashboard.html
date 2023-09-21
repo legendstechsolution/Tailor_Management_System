@@ -4,25 +4,42 @@
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title>
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tailoring Management System</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+         $("#includeHtml").load("Header.html");
+        }); 
+         $(function() {
+         $("#sidebar").load("Sidebar.html");
+        });
+     </script>
 </head>
 <body>
-    <div class="container mt-4 mb-4 ">
+    <div  id="includeHtml">
+
+    </div>
+    <div class="row">
+    <div class="col-sm-3  " >
+        <div  id="sidebar"></div>
+    </div>
+    <div class="container col-md-8 mt-4 w-75 mb-4 ">
         <!-- //this is 1st row // -->
             <div class="row"> 
                 <div class="col-md-4 pt-4">
-                    <div class="card mb-4 van">
+                    <div class="card w-100 mb-4 van">
                         <div class="card-body">1</div>
                         <div class="pb-5 ms-3 ">Total Order</div>
                     </div>
                 </div> 
                 <div class="col-md-4 pt-4">
-                    <div class="card mb-4 car">
+                    <div class="card w-100 mb-4 car">
                         <div class="card-body">2</div>
                         <div class=" pb-5 ms-3">Pending Order</div>
                     </div>
                 </div> 
                 <div class="col-md-4 pt-4">
-                    <div class="card mb-4 swift">
+                    <div class="card w-100 mb-4 swift">
                         <div class="card-body">3</div>
                         <div class=" pb-5 ms-3 ">Completed Order</div>
                     </div>
@@ -31,25 +48,26 @@
         <!-- //this is 2nd row // -->            
             <div class="row">
                 <div class="col-md-4 pt-2">
-                    <div class="card mb-4 van">
+                    <div class="card w-100 mb-4 van">
                         <div class="card-body">13</div>
                         <div class=" pb-5 ms-3 ">Assigned Order</div>
                     </div>
                 </div> 
                 <div class="col-md-4 pt-2">
-                    <div class="card mb-4 car">
+                    <div class="card w-100 mb-4 car">
                         <div class="card-body">5</div>
                         <div class=" pb-5 ms-3" >Total Tailor</div>
                     </div>
                 </div> 
                 <div class="col-md-4 pt-2">
-                    <div class="card mb-5 swift">
+                    <div class="card w-100 mb-5 swift">
                         <div class="card-body">4</div>
                         <div class=" pb-5 ms-3">No of Staff</div>
                     </div>
                 </div>
             </div>
 
+    </div>
     </div>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>    
 </body>
