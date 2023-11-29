@@ -1,92 +1,311 @@
 /* Connect All start */
+:root {
+    --inputcolor: #FFC107;
+    --textwhitecolor: white;
+    --submitcbtnbg: rebeccapurple;
+    --input_green: lightgreen;
+    --input_yellow: yellow;
 
-p,div,h1,h2,h3,h4,h5,h6,body{
+
+}
+
+input[type=date] {
+    text-transform: uppercase;
+}
+
+td,
+th {
+    white-space: nowrap;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
     padding: 0px;
     margin: 0px;
     box-sizing: 0px;
     font-family: sans-serif;
 }
 
-.width
-{
-    width: 70%;
+
+
+.close_button {
+    background-color: #cf4d35;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    color: "#ffff";
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.widthsmall
-{
+
+.close_button:hover {
+    cursor: pointer;
+    background: #cc8b1a;
+    color: #000;
+    -webkit-box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+    -moz-box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+    box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+    color: "#ffff";
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.profile-button:hover {
+    cursor: pointer;
+    background: #cc8b1a;
+    color: #000;
+    -webkit-box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+    -moz-box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+    box-shadow: -1px 2px 15px 0px rgba(5, 5, 5, 0.81);
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(231, 228, 228);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(237, 234, 234);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4b4949;
+}
+.bg_navcolor{
+    background-color: #f77511;
+}
+.width {
+    width: 70%;
+} @media print {
+    /* Define print-specific CSS */
+    body {
+        font-size: 12pt;
+    }
+
+    .table-responsive {
+        overflow: visible !important;
+    }
+}
+.fixTableHead { 
+    overflow-y: auto; 
+    height: 350px; 
+  } 
+  .fixTableHead thead th { 
+    position: sticky; 
+    top: 0; 
+  } 
+  table { 
+    border-collapse: collapse;         
+    width: 100%; 
+  } 
+  
+.bgactive{
+    background-color: black;
+}
+.nav_list>li>a{
+font-size: 15px;
+text-transform: capitalize;    color:#fff;
+font-weight: bolder;
+
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ordernocolor {
+    background-color: deeppink;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.quantitfocus1 {
+    background-color: #0b3510;
+    /* Replace with desired background color */
+    border: 1px solid #e9e2e2;
+    /* Replace with desired border style */
+    font-size: 16px;
+
+    padding: 10px;
+    font-weight: bolder;
+    color: floralwhite;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.quantitfocus {
+    background-color: #f77511;
+    /* Replace with desired background color */
+    border: 1px solid #e9e2e2;
+    /* Replace with desired border style */
+    font-size: 16px;
+
+    padding: 10px;
+    font-weight: bolder;
+    color: floralwhite;
+    border-radius: 10px 10px 10px 10px;
+
+    /* Replace with desired font size */
+}
+
+.widthsmall {
     width: 25%;
 }
 
-.row{
-    margin-right: 0px;
-}
+
 
 /* Connect All end */
 
 
-/* Header start */
 
-.clear
-{
-    margin-left: -12px;
+/* Header start */
+.app {
+    background-color: var(--inputcolor);
+}
+
+
+
+.test {
+    background-color: var(--inputcolortype);
 }
 
 /* Header end */
 
 /* Sidebar start */
 
-.sidebar{
+.sidebar {
     background-color: rgb(76, 100, 124);
-    color: white;
-    height: autopx;
+    color: var(--textwhitecolor);
+    height: 557px;
+    overflow-y: scroll;
 }
 
 /* Sidebar end */
 
 /* add_staff start */
 
-.alpha
-{
-    background-color:rebeccapurple;
+.alpha {
+    background-color: var(--submitcbtnbg);
 }
 
 /* add_staff end */
 
 /* create_order start */
 
-.height
-{
+.height {
     height: 1500px;
     background-color: rgb(76, 100, 124);
     margin-left: -12px;
     padding-left: 24px;
 }
 
-.app
-{
-    background-color: yellow;
+
+
+.fixed-sidebar {
+    position: fixed;
+    top: 0px;
+    height: auto;
+    margin-top: 48px;
+
+    /* You can adjust the width and styling as needed */
+
+}
+
+
+
+.input_yellow {
+
+    background-color: var(--input_yellow);
     font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    max-width: 100%;
+    /* Adjust this width to your preference */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.bgcolor
-{
-    background-color: lightgreen;
+
+.input_green {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: var(--input_green);
     font-size: 14px;
-
+    max-width: 100%;
+    /* Adjust this width to your preference */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.fun
-{
-    color: #90EE90;
-}
 
-.blue
-{
-    background-color: blue;
+.calculate_input {
+    text-transform: uppercase;
+    font-weight: bolder;
     font-size: 14px;
+    text-align: end;
+
 }
 
-.margin
-{
+.headersticky {
+    position: sticky !important;
+    top: 0px;
+    z-index: 10000;
+    background-color: #ffff;
+}
+
+.readonly_input {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: blue !important;
+    text-align: end;
+    font-size: 14px;
+    color: #ffff;
+
+}
+
+.margin {
     margin-left: -28px;
     width: 180px;
 }
@@ -97,97 +316,91 @@ p,div,h1,h2,h3,h4,h5,h6,body{
 
 /* dashboard start */
 
-.van
-{
-    background-color: #0A58CA;
+.dashboard_pending {
+    background-color: #ca2d0a;
     color: white;
-    
+    text-transform:capitalize ;
+    font-weight: bold;
+    font-size: 15px;
+
 }
 
-.car
-{
-    background-color: #3D8BFD;
-    color: white;
-}
-
-.swift
-{
+.dashboard_total {
     background-color: #FFC107;
-    color: white;
+    color: rgb(16, 16, 16); text-transform:capitalize ;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dashboard_completed {
+    background-color: #1f4b25;
+    color: white; text-transform:capitalize ;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* dashboard end */
 
 /* Manage order start */
 
-.setwidth
-{
+.setwidth {
     width: 75%;
 }
-.w-75
-{
+
+.w-75 {
     width: -25px;
 }
-.card.set
-{
+
+.card.set {
     height: 580px;
     margin-right: -20px;
 }
-.order
-{
+
+.order {
     font-size: 15px;
-    background:purple;
-    border: 1px solid purple ;
+    background: purple;
+    border: 1px solid purple;
 }
 
-.add
-{
+.add {
     font-size: 15px;
-    background:purple;
-    border-radius: 10px;
-    border: 1px solid purple ;
+    background: purple;
+    border: 1px solid purple;
 
 }
 
-.overflow-scroll
-{
-    width: 100%;
-    height: 440px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-}
 
-thead
-{
+
+thead {
     font-size: 13px;
 }
 
-.pending
-{
+.pending {
     border-radius: 10px;
 }
 
-.line
-{
+.line {
     margin-top: -10px;
 }
 
 /* Manage order end */
 
+/* Tailor Work Assign start */
+
+
+/* Tailor Work Assign End */
+
 /*  Tailor Production Report Start */
 
-.date
-{
+.date {
     margin-left: -20px;
 }
 
-.search
-{
+.search {
     width: 100%;
 }
 
-.overflow-scroll.adjust
-{
+.overflow-scroll.adjust {
     height: 300px;
 }
 
@@ -195,58 +408,40 @@ thead
 
 /* Manage Tailor Start */
 
-.card.tailor
-{
-    height: 400px;
-}
+
 
 
 /* My profile start */
 
-.rounded
-{
+.rounded {
     padding-left: 40px;
 }
 
-.jones
-{
-    text-align: center;
-}
 
-.jones.name
-{
+
+.jones.name {
     color: grey;
 }
 
-.card
-{
-    width: 70%;
-}
 
-.text
-{
-    background-color:rebeccapurple;
+
+.text {
+    background-color: rebeccapurple;
     font-size: 13px;
     width: 70%;
 }
 
-.jone
-{
-    height: 400px;
-}
 
 
-@media only screen and (max-width: 600px) {
-    
-}
+
+@media only screen and (max-width: 600px) {}
 
 @media only screen and (max-width: 425px) {}
 
 @media only screen and (max-width: 375px) {}
 
-@media only screen and (min-width: 400px) {
-   
-}
+@media only screen and (min-width: 400px) {}
+
 @media (max-width: 767px) {
     .table-responsive {
         overflow-x: auto;
@@ -258,7 +453,7 @@ thead
 
 @media only screen and (min-width: 715px) {}
 
-@media (min-width: 300px) and (max-width: 997px) {}
+@media (min-width: 320px) and (max-width: 327) {}
 
 @media only screen and (min-width : 1200px) {}
 
@@ -268,6 +463,4 @@ thead
 
 @media only screen and (min-width : 1600px) {}
 
-@media only screen and (max-width : 1920px) { 
-  
-}
+@media only screen and (max-width : 1920px) {}

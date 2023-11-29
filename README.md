@@ -1,1 +1,0 @@
-# Tailor_Management_System
